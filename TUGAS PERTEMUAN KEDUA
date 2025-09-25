@@ -1,0 +1,195 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMBnWsMlLs1LzHIKtvw5o/5",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/rizkidany3-glitch/Pemograman-Dasar/blob/main/TUGAS%20PERTEMUAN%20KEDUA\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "zKa2SslwijZK",
+        "outputId": "71b68b8f-bbc6-45ae-d4e2-41d794c12802"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "firstname : Rizky\n",
+            "lastname : Dani\n",
+            "age : 20\n",
+            "isMarried : False\n"
+          ]
+        }
+      ],
+      "source": [
+        "#TODO:\n",
+        "firstname = 'Rizky'\n",
+        "lastname = 'Dani'\n",
+        "age = 20\n",
+        "isMarried = False\n",
+        "\n",
+        "print(\"firstname :\", firstname)\n",
+        "print(\"lastname :\", lastname)\n",
+        "print(\"age :\", age)\n",
+        "print(\"isMarried :\", isMarried)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# TODO\n",
+        "data_diri = {'firstname': 'Rizky', 'lastname': 'Dani', 'age': 20, 'isMarried': False}\n",
+        "\n",
+        "print(data_diri)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "u5wr2WlmnxSW",
+        "outputId": "feecbd02-0f33-45d6-b985-18673c51f1e9"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'firstname': 'Rizky', 'lastname': 'Dani', 'age': 20, 'isMarried': False}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "inspeksi = [\"pemahaman terhadap rencana dan desain\", \"ketersediaan bahan dan peralatan\", \"pengawasan pekerjaan\", \"kualitas konstruksi\", \"keselamatan kerja\", \"koordinasi dengan pemilik proyek\"]\n",
+        "\n",
+        "print(\"daftar inspeksi proyek:\")\n",
+        "for i in range(len(inspeksi)):\n",
+        "    print(f\"{i+1}. {inspeksi[i]}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "CxXyL_5JsJrz",
+        "outputId": "f89611c5-da54-4f01-9a6d-8a2bd29945e9"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "daftar inspeksi proyek:\n",
+            "1. pemahaman terhadap rencana dan desain\n",
+            "2. ketersediaan bahan dan peralatan\n",
+            "3. pengawasan pekerjaan\n",
+            "4. kualitas konstruksi\n",
+            "5. keselamatan kerja\n",
+            "6. koordinasi dengan pemilik proyek\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "# waktu datang\n",
+        "startime = {\"HH\": 9, \"mm\": 23, \"ss\": 57}\n",
+        "\n",
+        "# waktu pulang\n",
+        "endtime = {\"HH\": 15, \"mm\": 25, \"ss\": 43}\n",
+        "\n",
+        "print(\"waktu datang :\", startime)\n",
+        "print(\"waktu pulang :\", endtime)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "u0xi0iMBu7TL",
+        "outputId": "f1ff58bf-4043-4ca5-bf35-d9d52f01a273"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "waktu datang : {'HH': 9, 'mm': 23, 'ss': 57}\n",
+            "waktu pulang : {'HH': 15, 'mm': 25, 'ss': 43}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# STUDI KELAS : PENGGABUNGAN DAN ANALISIS KATALOG PRODUK\n",
+        "katalog_A = {\"oli\", \"ban\", \"lampu motor\", \"kampas rem\"}\n",
+        "katalog_B = {\"piston\", \"oli\", \"ban\", \"bearing\"}\n",
+        "produk_diskon = (\"oli\", \"ban\", \"noken as\")\n",
+        "\n",
+        "# gabungkan katalog_A dan katalog_B menjadi satu set unik\n",
+        "katalog_lengkap = katalog_A.union(katalog_B)\n",
+        "\n",
+        "# cari produk mana saja dari katalog_lengkap dan produk_diskon\n",
+        "produk_promo_aktif = katalog_lengkap.intersection(set(produk_diskon))\n",
+        "\n",
+        "# tampilkan hasil\n",
+        "print(\"katalog lengkap:\", katalog_lengkap)\n",
+        "print(\"produk diskon:\", produk_diskon)\n",
+        "print(\"produk promo aktif:\", produk_promo_aktif)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "spbR5emf2WOz",
+        "outputId": "3505eb4c-1133-46c6-9404-eceb77a01904"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "katalog lengkap: {'ban', 'oli', 'piston', 'bearing', 'kampas rem', 'lampu motor'}\n",
+            "produk diskon: ('oli', 'ban', 'noken as')\n",
+            "produk promo aktif: {'ban', 'oli'}\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
