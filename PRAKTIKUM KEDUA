@@ -1,0 +1,526 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNqeDsW5NUaGElhYgrP5ssP",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/rizkidany3-glitch/Pemograman-Dasar/blob/main/PRAKTIKUM%20KEDUA\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# deklarasi variabel list\n",
+        "numbers = [23,43,51,34]\n",
+        "# cara mengakses elemen dalam variabel list\n",
+        "numbers[0] # 23\n",
+        "numbers[1] # 43\n",
+        "numbers[2] # 15\n",
+        "numbers[3] # 34\n",
+        "#cara mengubah nilai elemen dalam variabel list\n",
+        "numbers[2] # 51\n",
+        "numbers[2] # 51\n",
+        "\n",
+        "print (numbers[1])\n",
+        "print (numbers[2])\n",
+        "print (numbers[3])\n"
+      ],
+      "metadata": {
+        "id": "qLxSv3zrINn0",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "a73174ab-a3f8-4a19-d611-60acf021298c"
+      },
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "43\n",
+            "51\n",
+            "34\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# deklrasi variabel list numbers\n",
+        "numbers = [1, 2, 3]\n",
+        "\n",
+        "# menambahkan elemen di indeks ke-4\n",
+        "numbers.insert(4, 5)  #[1, 2, 3, 5]\n",
+        "\n",
+        "# mengubah elemen di indeks ke-4\n",
+        "numbers[3] = 4  #[1, 2, 3, 4]\n",
+        "\n",
+        "# menghapus elemen di indeks ke-2\n",
+        "numbers.pop(2)  #[1, 2, 4]\n",
+        "\n",
+        "#print lalu liat hasilnya"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "VT5EiEEBfW8T",
+        "outputId": "20374257-d3fc-4d30-bfc3-46089562fdff"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "3"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 3
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# deklarasi variabel list\n",
+        "mylist = [1, \"Rumah\", 4.5, True,  [\"Kamar mandi\", \"Kamar tidur\"]]\n",
+        "\n",
+        "# cara mengakses elemen dalam variabel list\n",
+        "mylist[0] # 1\n",
+        "mylist[1] # \"Rumah\"\n",
+        "mylist[3] # True\n",
+        "mylist[4] # [\"Kamar mandi\", \"Kamar tidur\"]\n",
+        "\n",
+        "# cara mengakses elemen dalam sublist\n",
+        "mylist[4][0]  # \"Kamar mandi\"\n",
+        "mylist [4][1]  # \"Kamar tidur\"\n",
+        "\n",
+        "#print\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 36
+        },
+        "id": "gcFIVBNhjwRG",
+        "outputId": "90886ed9-3ee5-433f-f091-efc2be6fafba"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'Kamar tidur'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 10
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = [\"laptop\", \"monitor\",  \"mouse\", \"mousepad\", \"keyboard\", \"webcam\", \"microphone\"]\n",
+        "\n",
+        "print(x[0:5:2])\n",
+        "print(x[1:])\n",
+        "print(x[:3])\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "-qRGPBKYl0jj",
+        "outputId": "bd2d29ce-f5f5-4b35-b4f9-cc07c087a251"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['laptop', 'mouse', 'keyboard']\n",
+            "['monitor', 'mouse', 'mousepad', 'keyboard', 'webcam', 'microphone']\n",
+            "['laptop', 'monitor', 'mouse']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = (1, \"Polibatam\", 1+3j)\n",
+        "print(type(x))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "_CYMKdwwnBxZ",
+        "outputId": "23c78487-c653-4dbc-edfe-d07847434ca6"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<class 'tuple'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = (5, 'program', 1+3j)\n",
+        "print(x[1])\n",
+        "print(x[0:3])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "kIC7eg7DnBaU",
+        "outputId": "c6db4686-4c46-4aa4-859b-4ba1e5266174"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "program\n",
+            "(5, 'program', (1+3j))\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = (5, 'program', 1+3j)\n",
+        "x[1] = 'Polibatam'\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 159
+        },
+        "id": "b9jMS_CwIo02",
+        "outputId": "c835bb59-c604-4c30-d9e8-dcf522774b71"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "TypeError",
+          "evalue": "'tuple' object does not support item assignment",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m/tmp/ipython-input-147561490.py\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[0mx\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0;34m(\u001b[0m\u001b[0;36m5\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m'program'\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;36m1\u001b[0m\u001b[0;34m+\u001b[0m\u001b[0;36m3j\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 2\u001b[0;31m \u001b[0mx\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;36m1\u001b[0m\u001b[0;34m]\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0;34m'Polibatam'\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+            "\u001b[0;31mTypeError\u001b[0m: 'tuple' object does not support item assignment"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# deklarasi variabel tuple\n",
+        "numbers = (23, 43, 15, 34)\n",
+        "\n",
+        "# cara mengakses elemen dalam variabel tuple\n",
+        "numbers[0]  #23\n",
+        "numbers[1]  #43\n",
+        "numbers[2]  #15\n",
+        "\n",
+        "#lakukan print lalu amati hasilnya"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Y5yY1bJ5n5JR",
+        "outputId": "691db69a-8a4c-43d2-8dfc-8b4d9be3b907"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "15"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 2
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# deklarasi variabel set a dan b\n",
+        "a = {1, 2, 3}\n",
+        "b = {2, 3, 4}\n",
+        "\n",
+        "# operasi gabungan\n",
+        "a.union(b)   # {1, 2, 3, 4}\n",
+        "\n",
+        "#operasi irisan\n",
+        "a.intersection(b)  # {2, 3}\n",
+        "\n",
+        "# operasi perbedaan\n",
+        "a.symmetric_difference(b)  # {1, 4}\n",
+        "\n",
+        "#lakukan print dan lihat hasilnya\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Q3myb9HpZBPE",
+        "outputId": "065abbeb-bb0c-4945-bfe3-7b0f79c09db1"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{1, 4}"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 4
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = { 'nama' : 'rizky dani',  'age': 20, 'isMarried': False}\n",
+        "\n",
+        "print(type )"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "M0baza3KafMS",
+        "outputId": "92f514b8-723c-41e2-814b-1eda3793e05f"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<class 'dict'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = { 'nama': 'rizky dani', 'age': 20, 'isMarried': False}\n",
+        "\n",
+        "print(x(0))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 176
+        },
+        "id": "7Mn-usrgbI31",
+        "outputId": "aa9590f5-e17c-483f-c518-2c9c0a3f9c6a"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "TypeError",
+          "evalue": "'dict' object is not callable",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m/tmp/ipython-input-91045567.py\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[0mx\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0;34m{\u001b[0m \u001b[0;34m'nama'\u001b[0m\u001b[0;34m:\u001b[0m \u001b[0;34m'rizky dani'\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m'age'\u001b[0m\u001b[0;34m:\u001b[0m \u001b[0;36m20\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m'isMarried'\u001b[0m\u001b[0;34m:\u001b[0m \u001b[0;32mFalse\u001b[0m\u001b[0;34m}\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      2\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 3\u001b[0;31m \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mx\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;36m0\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+            "\u001b[0;31mTypeError\u001b[0m: 'dict' object is not callable"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = { 'nama': 'rizky dani', 'age': 20, 'isMarried': False}\n",
+        "\n",
+        "print(x [\"nama\"])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "s7ZNNZksbo9B",
+        "outputId": "6584518c-fa97-446e-95d0-343d4bd4e23c"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "rizky dani\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = { 'nama': 'rizky dani', 'age': 20, 'isMarried': False}\n",
+        "x ['job'] = \"web developer\"\n",
+        "\n",
+        "print(x)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "8Hd_xGX0cJcv",
+        "outputId": "edddddca-bbc6-4862-f52f-0d1b9fd5d2a5"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'nama': 'rizky dani', 'age': 20, 'isMarried': False, 'job': 'web developer'}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = { 'nama': 'rizky dani', 'age': 20, 'isMarried': False}\n",
+        "del x['isMarried']\n",
+        "\n",
+        "print (x)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "G2sWxZyacI-W",
+        "outputId": "9bc48c0b-871f-487c-8b90-3e61efbc12f9"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'nama': 'rizky dani', 'age': 20}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x = { 'nama': 'rizky dani', 'age': 20, 'isMarried': False}\n",
+        "x ['nama'] = \"dany\"\n",
+        "\n",
+        "print(x)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "VYw1_ZGAdo4i",
+        "outputId": "02c7f402-ad5e-439d-8ada-ccc6841eef11"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'nama': 'dany', 'age': 20, 'isMarried': False}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# deklarasi variabel dictionary\n",
+        "property_detail = {\"numFloors\": 1, \"propertyType\": \"rumah\", \"hasTerrace\": True, \"hasGrage\": False}\n",
+        "\n",
+        "# cara mengakses elemen dalam variabel dictionary\n",
+        "property_detail[\"numFloors\"]        # 1\n",
+        "property_detail[\"propertyType\"]     # \"rumah\"\n",
+        "property_detail[\"hasTerrace\"]       # True\n",
+        "property_detail[\"hasGrage\"]         # False\n",
+        "\n",
+        "# cara mengubah nilai elemen dalam variabel dictionary\n",
+        "property_detail[\"hasTerrace\"] = False\n",
+        "\n",
+        "property_detail[\"hasTerrace\"]      # False\n",
+        "\n",
+        "print(property_detail[\"propertyType\"])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "nj3fEQb7eQbd",
+        "outputId": "c2573c2c-4b98-4908-bbc4-5036f6e2633c"
+      },
+      "execution_count": 21,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "rumah\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
